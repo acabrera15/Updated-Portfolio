@@ -59,11 +59,11 @@
           <form>
             <div class="form-row">
               <div class="col-md-6 mb-3">
-                <label for="validationServer01">First name</label>
+                <label for="firstNameInput">First name</label>
                 <input
                   type="text"
-                  class="form-control is-valid"
-                  id="validationServer01"
+                  class="form-control"
+                  id="firstNameInput"
                   placeholder="First name"
                   value=""
                   required
@@ -71,13 +71,16 @@
                 <div class="valid-feedback">
                   Looks good!
                 </div>
+                <div class="invalid-feedback">
+                  Please add a first name
+                </div>
               </div>
               <div class="col-md-6 mb-3">
-                <label for="validationServer02">Last name</label>
+                <label for="lastNameInput">Last name</label>
                 <input
                   type="text"
-                  class="form-control is-valid"
-                  id="validationServer02"
+                  class="form-control"
+                  id="lastNameInput"
                   placeholder="Last name"
                   value=""
                   required
@@ -85,32 +88,52 @@
                 <div class="valid-feedback">
                   Looks good!
                 </div>
+                <div class="invalid-feedback">
+                  Please add a last name
+                </div>
               </div>
             </div>
             <div class="form-row">
               <div class="col-md-8 mb-3">
-                <label for="emailValidation">email</label>
+                <label for="emailInput">email</label>
                 <input
                   type="email"
-                  class="form-control is-invalid"
-                  id="enailValidation"
+                  class="form-control"
+                  id="emailInput"
                   placeholder="email"
+                  required
                 />
                 <div class="invalid-feedback">
                   Please provide a valid email address
+                </div>
+                <div class="valid-feedback">
+                  Looks Good!
                 </div>
               </div>
             </div>
 
             <div class="form-row">
               <div class="col-md-12 mb-3">
-                <label for="textAreaValidation">Message</label>
-                <textarea id="messageText" placeholder="write me a message" class="form-control is-valid" aria-label="With textarea"></textarea>
-
+                <label for="messageInput">Message</label>
+                <textarea
+                  id="messageInput"
+                  placeholder="write me a message"
+                  class="form-control
+                  aria-label="With textarea"
+                  required
+                ></textarea>
+                <div class="valid-feedback">
+                  Looks Good!
+                </div>
+                <div class="invalid-feedback">
+                  Please fill out a message
+                </div>
               </div>
             </div>
 
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <button class="btn btn-primary" id="contactSubmit" type="submit">
+              Submit form
+            </button>
           </form>
         </div>
       </div>
