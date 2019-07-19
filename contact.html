@@ -47,6 +47,75 @@
       </div>
     </nav>
 
+    <!--Form Start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationServer01">First name</label>
+                <input
+                  type="text"
+                  class="form-control is-valid"
+                  id="validationServer01"
+                  placeholder="First name"
+                  value=""
+                  required
+                />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationServer02">Last name</label>
+                <input
+                  type="text"
+                  class="form-control is-valid"
+                  id="validationServer02"
+                  placeholder="Last name"
+                  value=""
+                  required
+                />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-8 mb-3">
+                <label for="emailValidation">email</label>
+                <input
+                  type="email"
+                  class="form-control is-invalid"
+                  id="enailValidation"
+                  placeholder="email"
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid email address
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 mb-3">
+                <label for="textAreaValidation">Message</label>
+                <textarea id="messageText" placeholder="write me a message" class="form-control is-valid" aria-label="With textarea"></textarea>
+
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!--BootStrap CDN-->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
